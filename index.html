@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -31,13 +39,46 @@
         </li>
         </ul>
     </nav>
-    <br>
         
-    <div class="container">
-        <h3>Navbar With Dropdown</h3>
-        <p>This example adds a dropdown menu in the navbar.</p>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/burgerindex.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+            <h3>PODEROZAS</h3>
+            <p>Le damos ese toque de swag</p>
+            </div>   
+        </div>
+        <div class="carousel-item">
+            <img src="./img/burger1.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+            <h3>ABUNDANTES</h3>
+            <p>No te vas a quedar con hambre</p>
+            </div>   
+        </div>
+        <div class="carousel-item">
+            <img src="./img/burger2.jpg" alt="New York" width="1100" height="500">
+            <div class="carousel-caption">
+            <h3>CASERAS</h3>
+            <p>Elaboradas a mano</p>
+            </div>   
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
-
+    
+    
+    
 
 
 
